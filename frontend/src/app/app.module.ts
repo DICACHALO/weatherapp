@@ -26,6 +26,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
+import { ApiService } from './services/api.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +56,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     UserService,
     TokenInterceptorService,
     AuthGuard,
+    ApiService
   ],
   bootstrap: [AppComponent]
 })
