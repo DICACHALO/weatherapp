@@ -32,7 +32,6 @@ export class SearchComponent implements OnInit {
   submitLocation(cityName: HTMLInputElement) {
     if (cityName.value) {
       this.getWeather(cityName.value);
-
       cityName.value = '';
     } else {
       alert('Please. Insert some values');
